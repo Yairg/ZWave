@@ -8,3 +8,6 @@ This repository contains the code for a program that duplicates a ZWave network 
 * I tested this with Intermatic Home Settings HA07 Master controller and Intermatic Home Settings HA07 Handy remote.
 * You have Control Think SDK install. (I downloaded the SDK from (http://forums.controlthink.com/t/2051.aspx)
 
+
+## Configuration Files
+
