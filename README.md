@@ -51,7 +51,7 @@ Example:
 
 
 ### Command line arguments:
-           DuplicateZwaveNetwork.Exe <Config File Path> <Controller Name>
+	DuplicateZwaveNetwork.Exe <Config File Path> <Controller Name>
 
 * __Config File Path__ - The path to the configuration file.
 * __Controller Name__ - The name of the controller configuration to use when copying the network to the controller
