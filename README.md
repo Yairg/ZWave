@@ -9,5 +9,4 @@ This repository contains the code for a program that duplicates a ZWave network 
 * You have Control Think SDK install. (I downloaded the SDK from (http://forums.controlthink.com/t/2051.aspx)
 
 
-Configuration Files
-___________________
+### Configuration File Structure
