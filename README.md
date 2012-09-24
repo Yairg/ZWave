@@ -22,7 +22,7 @@ A mapping between node id and device names. The syntax for every device is:
 The schenes that are avialable. Format for a schene is:
 
          {"Id":"<Schene ID>","Name":"<Schene Name>",
-"OffDevices":<Array Of devices that are off in the schene>,"OnDevices":<Array of devices that are on in the schene>}
+          "OffDevices":<Array Of devices that are off in the schene>,"OnDevices":<Array of devices that are on in the schene>}
 
 * __Schene ID__ - A string ID to identify the schene should be unique and should not contain a colon
 * __Schene Name__ - The name of the schene (Any string is OK)
@@ -30,9 +30,11 @@ The schenes that are avialable. Format for a schene is:
 * __Array of devices that are on in the schene__  - An integer array of node ID for devices that should be turned on when the schene is activated");
 
 Example:
+
    {"Id":"K2","Name":"Half Kitchen","OffDevices":[27,28],"OnDevices":[26]},
 
 
-* Controllers - The controller defined 
+#### Controllers 
+The controllers defined for the system (The controller being configured should be one of them. For every controller we define the list mapping between controller channels and scenes/ devices
 
 
