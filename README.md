@@ -14,20 +14,24 @@ The program reads network configuration from a config file. This file is JSON fo
 #### Devices
 A mapping between node id and device names. The syntax for every device is:
 
-	{"Name":"<<Name of the device>>","NodeId":<<The Node ID>>}
+	{"Name":"<Name of the device>","NodeId":<The Node ID>}
 * __Name of the device__ - Every string meaningfull name for the device
-* <Node ID> - The node Id for the device in the ZWave mesh. To determine the NodeId I used the Think Essentials and right click properties on the device
+* __Node ID__ - The node Id for the device in the ZWave mesh. To determine the NodeId I used the Think Essentials and right click properties on the device
 
 #### Schenes 
 The schenes that are avialable. Format for a schene is:
 
-         {"Id":\"<Schene ID>\","Name":\"<Schene Name>\","OffDevices":<Array Of devices that are off in the schene>,"OnDevices":<Array of devices that are on in the schene>}
+         {"Id":"<Schene ID>","Name":"<Schene Name>",
+"OffDevices":<Array Of devices that are off in the schene>,"OnDevices":<Array of devices that are on in the schene>}
 
-** <Schene ID> - A string ID to identify the schene should be unique and should not contain a colon
-** <Schene Name> - The name of the schene (Any string is OK)
-** <Array Of devices that are off in the schene> - An integer array of node ID for devices that should be turned off when the schene is activated
-** <Array of devices that are on in the schene> -  - An integer array of node ID for devices that should be turned on when the schene is activated");
-** <Array of devices that are on in the schene> -  - An integer array of node ID for devices that should be turned on when the schene is activated");
+* __Schene ID__ - A string ID to identify the schene should be unique and should not contain a colon
+* __Schene Name__ - The name of the schene (Any string is OK)
+* __Array Of devices that are off in the schene__ - An integer array of node ID for devices that should be turned off when the schene is activated 
+* __Array of devices that are on in the schene__  - An integer array of node ID for devices that should be turned on when the schene is activated");
+
+Example:
+   {"Id":"K2","Name":"Half Kitchen","OffDevices":[27,28],"OnDevices":[26]},
+
 
 * Controllers - The controller defined 
 
