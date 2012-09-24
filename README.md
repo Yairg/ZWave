@@ -63,3 +63,7 @@ Make sure to put the controller in "Receive Network Configuration" state to do s
 
 On the HA09 the steps are the same but the lights will flash instead of the display.
 
+
+
+For more info about HA07 controller go to (http://www.homesettings.com/products/controllers/ha07.aspx) 
+For more info about HA09 controller got to (http://www.homesettings.com/products/controllers/ha09.aspx)
