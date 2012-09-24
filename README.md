@@ -56,9 +56,10 @@ Example:
 * __Config File Path__ - The path to the configuration file.
 * __Controller Name__ - The name of the controller configuration to use when copying the network to the controller
 
-Make sure to put the controller in "Receive Network Configuration" state to do so on HA07 and HA09
+Make sure to put the controller in "Receive Network Configuration" state to do so on HA07 
 * Press and hold the INCLUDE Button for 5 seconds. COPY will flash.
 * Release the INCLUDE button.
 * Press and release the channel 1 OFF/DIM. The display will show "RA" which means "Receive All Information"
 
+On the HA09 the steps are the same but the lights will flash instead of the display.
 
