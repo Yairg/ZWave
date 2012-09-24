@@ -43,11 +43,22 @@ The controllers defined for the system (The controller being configured should b
 * __Number of Channels__ - The number of channels that this controller supports (HA07 supports 12 HA09 supports 6)
 * __Channel mapping array__ - An array with mapping between channel and scenes or devices. The first element in this array will be the setting for the first channel and so on. (meaning that the max size of this array is the number of channels the controller supports). 
 To map a scene to a channel just state its ID 
-To map a device us the following string ```d:Device Node ID: Off On```
+To map a device us the following string ```d:Device Node ID: off or on``` (So ```d:32:on``` means that the channel will be put device 32 to state on)
 
 Example:
 
 	{"Name":"Entrance","NumberOfChannels":12,"Channells":["PR1","PR2","d:35:on","","E1","","7","8","9","10","11","12"]},
 
+
+### Command line arguments:
+           DuplicateZwaveNetwork.Exe <Config File Path> <Controller Name>
+
+* __Config File Path__ - The path to the configuration file.
+* __Controller Name__ - The name of the controller configuration to use when copying the network to the controller
+
+Make sure to put the controller in "Receive Network Configuration" state to do so on HA07 and HA09
+* Press and hold the INCLUDE Button for 5 seconds. COPY will flash.
+* Release the INCLUDE button.
+* Press and release the channel 1 OFF/DIM. The display will show "RA" which means "Receive All Information"
 
 
