@@ -27,14 +27,18 @@ The schenes that are avialable. Format for a schene is:
 * __Schene ID__ - A string ID to identify the schene should be unique and should not contain a colon
 * __Schene Name__ - The name of the schene (Any string is OK)
 * __Array Of devices that are off in the schene__ - An integer array of node ID for devices that should be turned off when the schene is activated 
-* __Array of devices that are on in the schene__  - An integer array of node ID for devices that should be turned on when the schene is activated");
+* __Array of devices that are on in the schene__  - An integer array of node ID for devices that should be turned on when the schene is activated
 
 Example:
 
-   {"Id":"K2","Name":"Half Kitchen","OffDevices":[27,28],"OnDevices":[26]},
+          {"Id":"K2","Name":"Half Kitchen","OffDevices":[27,28],"OnDevices":[26]},
 
 
 #### Controllers 
-The controllers defined for the system (The controller being configured should be one of them. For every controller we define the list mapping between controller channels and scenes/ devices
+The controllers defined for the system (The controller being configured should be one of them. For every controller we define the list mapping between controller channels and scenes/ devices. The format for a controller configuration is:
+
+
+	{"Name":"Entrance","NumberOfChannels":12,"Channells":["PR1","PR2","d:35:on","","E1","","7","8","9","10","11","12"]},
+
 
 
