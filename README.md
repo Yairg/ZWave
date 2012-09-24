@@ -37,6 +37,15 @@ Example:
 #### Controllers 
 The controllers defined for the system (The controller being configured should be one of them. For every controller we define the list mapping between controller channels and scenes/ devices. The format for a controller configuration is:
 
+	{"Name":"<Name Of the controller>","NumberOfChannels":<Number of channels>,"Channells":<Channel mapping array>}
+
+* __Name of the controller__ - The name you will reference the controller when configuring it (This will be the second parameter to the program. This should be unique across controllers
+* __Number of Channels__ - The number of channels that this controller supports (HA07 supports 12 HA09 supports 6)
+* __Channel mapping array__ - An array with mapping between channel and scenes or devices. The first element in this array will be the setting for the first channel and so on. (meaning that the max size of this array is the number of channels the controller supports). 
+To map a scene to a channel just state its ID 
+To map a device us the following string ```d:Device Node ID: Off On```
+
+Example:
 
 	{"Name":"Entrance","NumberOfChannels":12,"Channells":["PR1","PR2","d:35:on","","E1","","7","8","9","10","11","12"]},
 
