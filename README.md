@@ -12,8 +12,8 @@ This repository contains the code for a program that duplicates a ZWave network 
 ### Configuration File Structure
 The program reads network configuration from a config file. This file is JSON formatted and contains the follwoing Syntax:
 * Devices - A mapping between node id and device names. The syntax for every device is:
-	{\"Name\":\"<Name of the device>\",\"NodeId\":<The Node ID>}
-	** <Name of the device> - Every string meaningfull name for the device
+	'''{"Name":"<Name of the device>","NodeId":<The Node ID>}'''
+	** __Name of the device__ - Every string meaningfull name for the device
 	** <Node ID> - The node Id for the device in the ZWave mesh. To determine the NodeId I used the Think Essentials and right click properties on the device
 
 * Schenes - The schenes that are avialable. Format for a schene is:
