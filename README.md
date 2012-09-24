@@ -21,8 +21,8 @@ A mapping between node id and device names. The syntax for every device is:
 #### Schenes 
 The schenes that are avialable. Format for a schene is:
 
-         {"Id":"<Schene ID>","Name":"<Schene Name>",
-          "OffDevices":<Array Of devices that are off in the schene>,"OnDevices":<Array of devices that are on in the schene>}
+	{"Id":"<Schene ID>","Name":"<Schene Name>",
+	 "OffDevices":<Array Of devices that are off in the schene>,"OnDevices":<Array of devices that are on in the schene>}
 
 * __Schene ID__ - A string ID to identify the schene should be unique and should not contain a colon
 * __Schene Name__ - The name of the schene (Any string is OK)
@@ -31,7 +31,7 @@ The schenes that are avialable. Format for a schene is:
 
 Example:
 
-          {"Id":"K2","Name":"Half Kitchen","OffDevices":[27,28],"OnDevices":[26]},
+	{"Id":"K2","Name":"Half Kitchen","OffDevices":[27,28],"OnDevices":[26]},
 
 
 #### Controllers 
